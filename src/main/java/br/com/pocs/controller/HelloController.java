@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-@Controller("/hello")
+@Controller("${hello.controller.path}")
 public class HelloController implements HelloControllerRoutes {
 
     private static final Logger LOG = LoggerFactory.getLogger(HelloController.class);
